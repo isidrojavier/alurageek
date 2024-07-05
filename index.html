@@ -1,23 +1,100 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Carta producto</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Alurageek</title>
 </head>
 <body>
-    <div class="carta">
-        <div class="imgbox"></div>
-        <div class="contenido">
-            <span class="precio">
-                <a href="#">1.000.000€</a>
-            </span>
-            <ul>
-                <li>Mexico</li>
-                <li>1200m2</li>
-                <li>Casa</li>
-            </ul>
+    <div class="contenedorsecciones">
+        <div class="seccion" id="productos">
+            <h3>Productos Alurageek</h3>
+            <div class="contenedor">
+              <!-- carta 1 -->
+              <div class="carta">
+                <div class="imgbox"><img src="casa.jpg"></div>
+                  <div class="contenido">
+                      <h5>producto1</h5>
+                      <p>100$
+                      <img class="borrar" src="papelera.png"></p>
+                  </div>
+              </div>
+              <!-- carta 2 -->
+              <div class="carta">
+                <div class="imgbox"><img src="casa.jpg"></div>
+                  <div class="contenido">
+                      <h5>producto1</h5>
+                      <p>100$<img class="borrar" src="papelera.png"></p>
+                  </div>
+              </div>
+              <!-- fin de contenedor -->
+            </div>
+          <!-- fin de seccion -->
         </div>
+        <div class="seccion" id="agregar">
+            <h3>Agregar producto</h3>
+            <form class="formulario" data-formulario>
+              <fieldset class="campo">
+                <label class="etiqueta" for="nombre">Nombre:</label>
+                <input
+                  name="nombre"
+                  id="nombre"
+                  class="campocompleto"
+                  type="text"
+                  minlength="3"
+                  required
+                  />
+                <span class="mensaje-error"></span>
+              </fieldset>
+            
+              <fieldset class="campo">
+                <label class="etiqueta" for="precio">Precio:</label>
+                <input
+                  name="precio"
+                  id="precio"
+                  class="campocompleto"
+                  type="number"
+                  minlength="1"
+                  required
+                />
+                <span class="mensaje-error"></span>
+              </fieldset>
+              
+              <fieldset class="campo">
+                <label class="etiqueta" for="imagen">URL imagen:</label>
+                <input
+                  name="imagen"
+                  id="imagen"
+                  class="campocompleto"
+                  type="text"
+                  minlength="3"
+                  required
+                />
+                <span class="mensaje-error"></span>
+              </fieldset>
+            
+              <div class="btformulario">
+                <input
+                  value="Enviar"
+                  class="formulario__boton"
+                  id="enviar"
+                  data-boton-enviar
+                  type="submit"
+                />
+                <span class="mensaje-error"></span>
+            
+                <input
+                  type="reset"
+                  value="Limpiar"
+                  id="borrar"
+                />
+              </div>
+                    
+            </form>
+          </div>
+        
+       
+    </div>
 </body>
 </html>
