@@ -1,11 +1,11 @@
 .contenedorsecciones {
     display: flex;
     flex-wrap: wrap;
-    background-color: DodgerBlue;
+    /*background-color: DodgerBlue;*/
   }
   
   .contenedorsecciones > div {
-    background-color: #f1f1f1;
+    /*background-color: #f1f1f1;*/
     margin: 10px;
     text-align: center;
     line-height: 75px;
@@ -23,7 +23,7 @@
     padding: 10px 10px;
   }
 
-  .contenedor .carta {
+  .contenedor .carta2 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -36,7 +36,7 @@
     
   }
 
-  .contenedor .carta .imgbox {
+  .contenedor .carta2 .imgbox {
     position: absolute;
     top: 20px;
     width: 200px;
@@ -47,7 +47,7 @@
     /*transition: 0.5s;*/
   }
 
-  .contenedor .carta .imgbox img {
+  .contenedor .carta2 .imgbox img {
     position: absolute;
     top: 0;
     left: 0;
@@ -57,7 +57,7 @@
     border-radius: 12px;
   }
 
-  .contenedor .carta .contenido {
+  .contenedor .carta2 .contenido {
     position: absolute;
     padding: 150px;
     overflow: hidden;
