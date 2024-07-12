@@ -26,6 +26,8 @@
   .contenedor .carta2 {
     position: relative;
     display: flex;
+    /*align-items: stretch;
+    flex-wrap: wrap;*/
     justify-content: center;
     align-items: flex-start;
     width: 250px;
@@ -36,6 +38,11 @@
     
   }
 
+.contenedor .carta2 #precio{
+  display: flex;
+  align-items: stretch;
+}
+  
   .contenedor .carta2 .imgbox {
     position: absolute;
     top: 20px;

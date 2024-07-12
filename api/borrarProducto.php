@@ -9,10 +9,9 @@
 
     $json = file_get_contents("php://input");
     
-    $objEmpleado = json_decode($json);
+    $objProducto = json_decode($json);
 
-    $sql = "INSERT INTO usuarios(usuario, contrasena, email) VALUES('$objEmpleado->usuario', '$objEmpleado->contrasena', '$objEmpleado->email')";
-    //$sql = "INSERT INTO usuarios(usuario, contrasena, email) VALUES('Juan hortera', '1234', 'juan@prueba.com')";
+    $sql = "DELETE FROM productos WHERE idproducto = $objProducto->idproducto";
     
     if ($link->query($sql) === TRUE) {
         //echo "New record created successfully";
@@ -22,7 +21,5 @@
         echo "Error: " . $sql . "<br>" . $link->error;
       }
 
-    /*$query = $mysqli->query($sql);
-
-    $jsonRespuesta = array('msg' => 'OK');
-    echo json_encode($jsonRespuesta);*/
+     // $jsonRespuesta = array('msg' => $sql);
+     // echo json_encode($jsonRespuesta);
